@@ -1,4 +1,4 @@
-const BASE_URL = "https://todo-backend.onrender.com/api/todos/get";
+const BASE_URL = "https://todo-backend.onrender.com/api/todos";
 
 export const todoApi = {
   getAll: async () => {
