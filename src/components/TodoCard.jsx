@@ -79,7 +79,7 @@ export default function TodoCard({ todo, onRefetch }) {
 
           <button
             onClick={e => { e.stopPropagation(); handleDelete(); }}
-            className="opacity-100 md:opacity-0 md:group-hover:opacity-100 text-red-400 hover:text-red-300 active:scale-95 transition-all duration-200 p-2 md:p-1 rounded-lg flex-shrink-0"
+            className="opacity-100 md:opacity-0 md:group-hover:opacity-100 text-red-400 hover:text-red-300 active:scale-95 transition-all duration-200 p-2 md:p-1 rounded-lg shrink-0"
             style={{ background: "rgba(248,113,113,0.15)" }}
           >
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
