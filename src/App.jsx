@@ -23,7 +23,7 @@ export default function App() {
         filter === "All" || t.priority === filter || t.category === filter
       )
       .filter(t =>
-        !search || t.task.toLowerCase().includes(search.toLowerCase())
+        !search || (t.title || "").toLowerCase().includes(search.toLowerCase())
       )
       .sort((a, b) => {
         if (sortBy === "newest")   return new Date(b.createdAt) - new Date(a.createdAt);
